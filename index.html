@@ -23,34 +23,156 @@
             justify-content: center;
             margin: 20px 10px;
         }
-        .gallery img {
+        .thumbnail {
+            position: relative;
             margin: 15px;
+        }
+        .thumbnail img {
             max-width: 300px;
             border: 5px solid #4A90E2;
             border-radius: 15px;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-        .gallery img:hover {
+        .thumbnail img:hover {
             transform: scale(1.05);
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
         }
-        .gallery img:active {
+        .thumbnail img:active {
             transform: scale(0.95);
+        }
+        .sub-gallery {
+            display: none;
+            padding: 10px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(255, 255, 255, 0.9);
+            width: 100%;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            border-radius: 15px;
+        }
+        .sub-gallery .thumbnail {
+            margin: 10px;
+            border: 1px solid #ccc;
+            padding: 5px;
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .sub-gallery .thumbnail img {
+            width: 100%;
+            height: auto;
+        }
+        .thumbnail:hover .sub-gallery {
+            display: flex;
         }
     </style>
 </head>
 <body>
     <h1>The GengGeng</h1>
     <div class="gallery">
-        <img src="https://genggeng9.github.io/9GengGeng/gutgut.jpg.jpg" alt="gutgut">
-        <img src="https://genggeng9.github.io/9GengGeng/sonnya.png.png" alt="sonnya">
-        <img src="https://genggeng9.github.io/9GengGeng/donut.jpg.jpg.jpg" alt="donut">
-        <img src="https://genggeng9.github.io/9GengGeng/me.jpg" alt="Me">
-        <img src="https://genggeng9.github.io/9GengGeng/gauresh.jpg" alt="gauresh">
-        <img src="https://genggeng9.github.io/9GengGeng/bunny.jpg" alt="bunny">
-        <img src="https://genggeng9.github.io/9GengGeng/makhare.jpg.jpg" alt="makhare">
-        <img src="https://genggeng9.github.io/9GengGeng/gaikwad.jpg.jpg" alt="gaikwad">
-        <img src="path/to/your/image4.jpg" alt="garje">
+        <div class="thumbnail">
+            <img src="https://genggeng9.github.io/9GengGeng/gutgut.jpg.jpg" alt="gutgut">
+            <div class="sub-gallery">
+                <div class="thumbnail">
+                    <img src="sub-image1-1.jpg" alt="Sub Image 1-1">
+                </div>
+                <div class="thumbnail">
+                    <img src="sub-image1-2.jpg" alt="Sub Image 1-2">
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://genggeng9.github.io/9GengGeng/sonnya.png.png" alt="sonnya">
+            <div class="sub-gallery">
+                <div class="thumbnail">
+                    <img src="sub-image2-1.jpg" alt="Sub Image 2-1">
+                </div>
+                <div class="thumbnail">
+                    <img src="sub-image2-2.jpg" alt="Sub Image 2-2">
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://genggeng9.github.io/9GengGeng/donut.jpg.jpg.jpg" alt="donut">
+            <div class="sub-gallery">
+                <div class="thumbnail">
+                    <img src="sub-image3-1.jpg" alt="Sub Image 3-1">
+                </div>
+                <div class="thumbnail">
+                    <img src="sub-image3-2.jpg" alt="Sub Image 3-2">
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://genggeng9.github.io/9GengGeng/me.jpg" alt="Me">
+            <div class="sub-gallery">
+                <div class="thumbnail">
+                    <img src="sub-image4-1.jpg" alt="Sub Image 4-1">
+                </div>
+                <div class="thumbnail">
+                    <img src="sub-image4-2.jpg" alt="Sub Image 4-2">
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://genggeng9.github.io/9GengGeng/gauresh.jpg" alt="gauresh">
+            <div class="sub-gallery">
+                <div class="thumbnail">
+                    <img src="sub-image5-1.jpg" alt="Sub Image 5-1">
+                </div>
+                <div class="thumbnail">
+                    <img src="sub-image5-2.jpg" alt="Sub Image 5-2">
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://genggeng9.github.io/9GengGeng/bunny.jpg" alt="bunny">
+            <div class="sub-gallery">
+                <div class="thumbnail">
+                    <img src="sub-image6-1.jpg" alt="Sub Image 6-1">
+                </div>
+                <div class="thumbnail">
+                    <img src="sub-image6-2.jpg" alt="Sub Image 6-2">
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://genggeng9.github.io/9GengGeng/makhare.jpg.jpg" alt="makhare">
+            <div class="sub-gallery">
+                <div class="thumbnail">
+                    <img src="sub-image7-1.jpg" alt="Sub Image 7-1">
+                </div>
+                <div class="thumbnail">
+                    <img src="sub-image7-2.jpg" alt="Sub Image 7-2">
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="https://genggeng9.github.io/9GengGeng/gaikwad.jpg.jpg" alt="gaikwad">
+            <div class="sub-gallery">
+                <div class="thumbnail">
+                    <img src="sub-image8-1.jpg" alt="Sub Image 8-1">
+                </div>
+                <div class="thumbnail">
+                    <img src="sub-image8-2.jpg" alt="Sub Image 8-2">
+                </div>
+            </div>
+        </div>
+        <div class="thumbnail">
+            <img src="path/to/your/image4.jpg" alt="garje">
+            <div class="sub-gallery">
+                <div class="thumbnail">
+                    <img src="sub-image9-1.jpg" alt="Sub Image 9-1">
+                </div>
+                <div class="thumbnail">
+                    <img src="sub-image9-2.jpg" alt="Sub Image 9-2">
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
