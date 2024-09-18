@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The GengGeng</title>
-    <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header class="hero">
@@ -15,24 +15,37 @@
 
     <main>
         <section id="members" class="members-section">
-            <h2>Our GengGeng Members</h2>
+            <h2 class="section-title">Our GengGeng Members</h2>
             <div class="members-grid">
-                <!-- Repeat this block for each member -->
+                <!-- Member 1 to Member 9 cards (images loaded directly) -->
                 <div class="member-card" id="member1">
                     <h3>Member 1</h3>
-                    <input type="file" id="upload1" accept="image/*">
-                    <div class="gallery" id="gallery1"></div>
+                    <div class="gallery" id="gallery1">
+                        <img src="images/member1-img1.jpg" class="gallery-img" alt="Member 1 Image 1">
+                        <img src="images/member1-img2.jpg" class="gallery-img" alt="Member 1 Image 2">
+                    </div>
                 </div>
                 <div class="member-card" id="member2">
                     <h3>Member 2</h3>
-                    <input type="file" id="upload2" accept="image/*">
-                    <div class="gallery" id="gallery2"></div>
+                    <div class="gallery" id="gallery2">
+                        <img src="images/member2-img1.jpg" class="gallery-img" alt="Member 2 Image 1">
+                        <img src="images/member2-img2.jpg" class="gallery-img" alt="Member 2 Image 2">
+                    </div>
                 </div>
-                <!-- Continue for all members -->
+                <!-- Continue for all 9 members -->
+                <div class="member-card" id="member9">
+                    <h3>Member 9</h3>
+                    <div class="gallery" id="gallery9">
+                        <img src="images/member9-img1.jpg" class="gallery-img" alt="Member 9 Image 1">
+                        <img src="images/member9-img2.jpg" class="gallery-img" alt="Member 9 Image 2">
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
+        <p>&copy; 2024 The GengGeng. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
